@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hand Notary Services | Mobile Notary & I-9 Verification in [Your City], GA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hand Notary Services provides premium mobile notary, I-9 verification, hospital and jail notarization services in and around [Your City], Georgia. Evening and weekend appointments available.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@400;500&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #0A2342;
+      --champagne: #DCC6A0;
+      --ivory: #F8F5F0;
+      --charcoal: #2E2E2E;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Lora", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--ivory);
+      color: var(--navy);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* Header / Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(248,245,240,0.98);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e4d7c2;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 60px;
+      height: 60px;
+      border-radius: 999px;
+      object-fit: cover;
+    }
+
+    .brand-text h1 {
+      font-family: "Cinzel", serif;
+      font-size: 20px;
+      margin: 0;
+      letter-spacing: 0.06em;
+    }
+
+    .brand-text p {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 14px;
+      margin: 0;
+      color: #555;
+    }
+
+    nav a {
+      margin-left: 16px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    nav a:hover {
+      color: #1b3b6a;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    /* Layout helpers */
+    section {
+      padding: 70px 18px;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2.section-title {
+      font-family: "Cinzel", serif;
+      font-size: 30px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 16px;
+      color: var(--charcoal);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--ivory), var(--champagne));
+      border-bottom: 1px solid #e4d7c2;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 18px 70px;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-family: "Cinzel", serif;
+      font-size: 34px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 0 0 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin: 0 0 24px;
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    .hero-meta {
+      font-size: 15px;
+      color: #444;
+      margin-top: 8px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 18px;
+      padding: 22px 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    }
+
+    .hero-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .hero-card p {
+      margin: 0;
+      font-size: 15px;
+      color: var(--charcoal);
+    }
+
+    /* Services grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 18px;
+      padding: 20px 18px 22px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+      border: 1px solid #e8ddc9;
+    }
+
+    .service-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 22px;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      margin: 0;
+      color: var(--charcoal);
+    }
+
+    /* Pricing */
+    .pricing-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #e4d7c2;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      padding: 10px 14px;
+      font-size: 15px;
+      border-bottom: 1px solid #f0e4d2;
+    }
+
+    .pricing-table th {
+      background: var(--champagne);
+      font-family: "Cormorant Garamond", serif;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .pricing-note {
+      font-size: 14px;
+      color: var(--charcoal);
+      margin-top: 12px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about-grid h3 {
+      font-family: "Cinzel", serif;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .about-grid p {
+      font-size: 15px;
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+
+    .about-box {
+      background: white;
+      border-radius: 18px;
+      padding: 20px 18px;
+      border: 1px solid #e4d7c2;
+      font-size: 15px;
+      color: var(--charcoal);
+    }
+
+    /* Contact */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px 20px;
+      border: 1px solid #e4d7c2;
+      font-size: 15px;
+      color: var(--charcoal);
+    }
+
+    .contact-card p {
+      margin: 0 0 8px;
+    }
+
+    .hours {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .contact-note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid #e4d7c2;
+      background: white;
+      padding: 18px;
+      font-size: 13px;
+      text-align: center;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-inner,
+      .services-grid,
+      .pricing-wrapper,
+      .about-grid,
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner {
+        padding-top: 40px;
+      }
+
+      nav {
+        display: none; /* keep it simple on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <div class="nav-inner">
+    <div class="brand">
+      <!-- Replace logo.png with your final logo file name -->
+      <img src="logo.png" alt="Hand Notary Services logo">
+      <div class="brand-text">
+        <h1>HAND NOTARY SERVICES</h1>
+        <p>Mobile Notary · I-9 Verification</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-outline" href="tel:+1XXXXXXXXXX">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h2>Premium Mobile Notary for Busy Lives</h2>
+      <p>
+        Hand Notary Services provides on-site notarization, I-9 verification, and facility visits
+        for families, professionals, and businesses throughout [Your City], Georgia and nearby areas.
+        Evening and weekend appointments are available so you don’t have to rearrange your life to get documents signed.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="tel:+1XXXXXXXXXX" class="btn">Call / Text to Book</a>
+        <a href="#contact" class="btn btn-outline">Request an Appointment</a>
+      </div>
+
+      <div class="hero-meta">
+        Serving: [List key cities / counties here] · Hospital & jail visits available
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Common Documents</h3>
+      <p>
+        Power of Attorney • Wills & Trusts • Real estate documents • Title transfers •
+        School & travel forms • Affidavits • I-9 employment verification.
+      </p>
+      <p style="margin-top:10px;">
+        <strong>Availability:</strong> Mon–Fri evenings · Weekends by appointment.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-inner">
+    <h2 class="section-title">Services</h2>
+    <p class="section-subtitle">
+      Flexible mobile notary services designed for real life — whether you’re at home, at work,
+      in the hospital, or helping a loved one in custody.
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>General Mobile Notary</h3>
+        <p>
+          Power of Attorney, wills, affidavits, titles, bill of sale, school forms, and more.
+          I travel to your home, office, coffee shop, or neutral location.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>I-9 Verification</h3>
+        <p>
+          Section 2 completion for remote employees. Quick 10–15 minute appointments
+          with clear instructions for both you and your employer.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Hospital & Nursing Home</h3>
+        <p>
+          Bedside notarization for patients and families, including healthcare directives and POA.
+          Coordinated respectfully with staff and family schedules.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Jail / Detention Center Notary</h3>
+        <p>
+          Document execution at local jails and detention facilities for POA, affidavits,
+          and other legal forms. Clear communication before and after the visit.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Document Courier</h3>
+        <p>
+          Optional pickup / drop-off of signed and notarized documents to overnight shipping
+          locations or designated offices.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>After-Hours Service</h3>
+        <p>
+          Limited after-hours and short-notice appointments available. Additional fee may apply.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-inner">
+    <h2 class="section-title">Pricing</h2>
+    <p class="section-subtitle">
+      Transparent, straightforward pricing with travel fees agreed upon before your appointment.
+      No surprises at the door.
+    </p>
+
+    <div class="pricing-wrapper">
+      <div>
+        <table class="pricing-table">
+          <tr>
+            <th>Service</th>
+            <th>Rate</th>
+          </tr>
+          <tr>
+            <td>First notarized signature</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Each additional signature (same visit)</td>
+            <td>$5–$10</td>
+          </tr>
+          <tr>
+            <td>Travel fee (0–10 miles)</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>Travel fee (10–20 miles)</td>
+            <td>$35</td>
+          </tr>
+          <tr>
+            <td>Travel fee (20–30 miles)</td>
+            <td>$45–$60</td>
+          </tr>
+          <tr>
+            <td>Hospital / nursing home visit</td>
+            <td>$40 + signatures</td>
+          </tr>
+          <tr>
+            <td>Jail / detention notarization</td>
+            <td>$85–$120</td>
+          </tr>
+          <tr>
+            <td>I-9 verification appointment</td>
+            <td>$30–$50</td>
+          </tr>
+          <tr>
+            <td>After-hours / rush</td>
+            <td>+ $10–$20</td>
+          </tr>
+        </table>
+        <div class="pricing-note">
+          Final quotes depend on distance, document volume, and facility requirements.
+          You’ll receive a confirmed total before your appointment is scheduled.
+        </div>
+      </div>
+
+      <div class="about-box">
+        <strong>Payment Options</strong><br>
+        Cash • Card • Zelle • Cash App (exact options you accept).<br><br>
+        <strong>ID Requirements</strong><br>
+        A valid, unexpired government-issued photo ID is required for all signers
+        (for example: driver’s license, state ID, passport).<br><br>
+        <strong>Important:</strong><br>
+        I am not an attorney and cannot provide legal advice or explain the legal effects of documents.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="section-inner">
+    <h2 class="section-title">About</h2>
+    <p class="section-subtitle">
+      A professional, mom-owned notary service focused on convenience, clarity, and care.
+    </p>
+
+    <div class="about-grid">
+      <div>
+        <h3>Meet Your Notary</h3>
+        <p>
+          Hand Notary Services was created to make notarization easier for everyday people:
+          parents, caregivers, remote workers, and families facing important decisions.
+        </p>
+        <p>
+          As a working mom of two and an online student, I know how valuable your time is.
+          My goal is to bring a calm, professional presence to every appointment, explain
+          the process clearly, and help you feel confident that your documents are completed correctly.
+        </p>
+      </div>
+      <div class="about-box">
+        <strong>Why clients choose Hand Notary Services:</strong>
+        <ul>
+          <li>Flexible evening and weekend availability</li>
+          <li>Mobile service to homes, workplaces, hospitals, and jails</li>
+          <li>Prompt communication and reminders</li>
+          <li>Warm, respectful service in sensitive situations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <h2 class="section-title">Contact & Booking</h2>
+    <p class="section-subtitle">
+      The fastest way to schedule is by call or text. You can also send an email with your document type,
+      preferred date/time, and location.
+    </p>
+
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <p><strong>Call / Text:</strong> <a href="tel:+1XXXXXXXXXX">(678) 953-7308</a></p>
+        <p><strong>Email:</strong> <a href="mailto:kimberlyn.hand@yahoo.com">kimberlyn.hand@yahoo.com</a></p>
+        <p><strong>Service Area:</strong> Sharpsgurg, [Neighboring Cities / Counties]</p>
+
+        <div class="hours">
+          <strong>Hours:</strong><br>
+          Mon–Fri: 6:00 PM – 9:00 PM<br>
+          Sat: 10:00 AM – 6:00 PM<br>
+          Sun: 12:00 PM – 4:00 PM<br>
+          After-hours by request.
+        </div>
+
+        <p class="contact-note">
+          When you reach out, please include:<br>
+          • Type of document(s) <br>
+          • Number of signers and witnesses<br>
+          • Preferred date, time, and location
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <p><strong>Online Request Form (optional):</strong></p>
+        <p>
+          If you use a tool like Google Forms or JotForm, paste its link here so clients
+          can submit appointment requests online.
+        </p>
+        <p>
+          Example: <em><a href="#">Click here to request an appointment online</a></em>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Hand Notary Services · Mobile Notary & I-9 Verification · Sharpsburg, Georgia
+</footer>
+
+<script>
+  // auto-update year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
